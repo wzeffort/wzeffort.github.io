@@ -17,8 +17,8 @@
   {{ else }}
   {{ .Title }}
   {{ if .Site.Params.postEdit.enable }}
-  <h1>你好</h1>
-  {{ $cleanPath := replace .File.Path "/posts/" "" }}
+  <!-- 由于将文章直接放在main分支根目录，这里替换掉文章路径中的posts -->
+  {{ $cleanPath := replace .File.Path "posts" "" }}
   {{ $editURL := printf "%s%s" .Site.Params.postEdit.url (path.Clean $cleanPath) }}
   <a href="{{ $editURL }}" rel="noopener external nofollow noreferrer" target="_blank" class="exturl post-edit-link" title="{{ T "PostMeta.edit" }}"><i class="fa fa-pen-nib"></i></a>
   {{ end }}
