@@ -4,27 +4,28 @@ draft = false
 title = '第一篇Hugo文章'
 +++
 
-## 个人博客盧瞳小站的Github仓库
-个人站点[`2061360308.github.io`](//2061360308.github.io)
+<div style="display: flex; align-items: center;">
+  <a href="//2061360308.github.io" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+    <img src="https://github.com/2061360308/2061360308.github.io/blob/hugo/static/imgs/avatar.jpg?raw=true" alt="头像" style="width: 100px; height: 100px; margin-right: 20px; border-radius: 50%;">
+    <h1 style="margin: 0;">盧瞳小站</h1>
+  </a>
+</div>
+
+## 个人博客《盧瞳小站》的Github仓库
+
+请到 [`2061360308.github.io`](//2061360308.github.io) 浏览构建后的站点
 
 ## 使用方法
-### 日常编辑文章
-如果需要创建新的文章可以使用[**github.dev**](//github.dev/2061360308/2061360308.github.io/tree/main)进行编写
+> 此博客项目完全依赖于Github Workflow在云端进行自动化构建，目前已部署到Github Pages
 
-仅仅是修改文章可以直接在github仓库下选择对应文章打开后点击编辑即可
+编辑文章：访问[github.com/2061360308/2061360308.github.io](https://github.com/2061360308/2061360308.github.io) 仓库直接在线添加货编辑Markdown文件即可
 
-### 图床
-腾讯云[COS Browser](https://cosbrowser.cloud.tencent.com/web/bucket)
+网站配置：可以编辑[`config.yaml`](//github.com/2061360308/2061360308.github.io/edit/hugo/config.yaml)
 
-### 网站配置
-网站的配置需要切换到hugo分支进行修改
+主题更改：直接修改[`.gitmodlues`](//github.com/2061360308/2061360308.github.io/edit/hugo/.gitmodlues)文件来更改子项目配置
 
-更改网站配置可以编辑`config.yaml` [Github在线编辑](//github.com/2061360308/2061360308.github.io/edit/hugo/config.yaml)
+可以使用[github.dev]()体验更完整的云IDE环境（速度较慢）[main分支](//github.dev/2061360308/2061360308.github.io/tree/main)、[hugo分支](//github.dev/2061306030/2061360308.github.io/tree/hugo)
 
-如果需要更换主题可以编辑`.gitmodlues`文件来更改子项目配置 [Github在线编辑](//github.com/2061360308/2061360308.github.io/edit/hugo/.gitmodlues)
-
->**注意**：hugo分支的更改提交默认不会触发Github Pages的更新，需要手动激活Workflow
->简单修改也可以使用[**github.dev**](//github.dev/2061306030/2061360308.github.io/tree/hugo)
 
 ## 构建说明
 
@@ -38,5 +39,50 @@ title = '第一篇Hugo文章'
  - 构建hugo网站
  - 发布到Github Page
 
-## 其他
-访问 [Hugo](https://gohugo.io) 网站！
+**注意**：hugo分支的更改提交默认不会触发Github Pages的更新，需要手动激活Workflow
+
+## 本地使用
+此项目在云端即可运行，如果需要克隆到本地测试请按照下面步骤进行
+
+1. 安装配置Hugo
+2. 克隆项目的hugo分支
+3. 克隆 main 分支到 content/posts 目录
+4. 更新子模块
+
+**Linux下命令示例**
+```shell
+# 克隆 hugo 分支
+git clone -b hugo https://github.com/2061360308/2061360308.github.io.git
+cd 2061360308.github.io
+
+# 删除 content/posts 目录（如果存在且不包含重要内容）
+rm -rf content/posts
+
+# 克隆 main 分支到 content/posts 目录
+git worktree add content/posts main
+
+# 更新子模块（如果有）
+git submodule update --init --recursive
+```
+
+**Windows Powershell下命令示例**
+```shell
+# 克隆 hugo 分支
+git clone -b hugo https://github.com/2061360308/2061360308.github.io.git
+cd 2061360308.github.io
+
+# 删除 content/posts 目录（如果存在且不包含重要内容）
+rmdir /S /Q content\posts
+
+# 克隆 main 分支到 content/posts 目录
+git worktree add content/posts main
+
+# 更新子模块（如果有）
+git submodule update --init --recursive
+```
+
+## 相关链接
+[Hugo](https://gohugo.io)
+[Hugo中文文档](https://hugo.opendocs.io/)
+[Hugo NexT演示站](https://hugo-next.eu.org/)
+[Hugo NexT Github](https://github.com/hugo-next/hugo-theme-next/)
