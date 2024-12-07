@@ -135,7 +135,7 @@ menus:
       pre: user
       weight: 2
     - identifier: flinks
-      name: 站点示例
+      name: 友情链接
       pageref: /flinks.html
       pre: thumbs-up
       weight: 3
@@ -181,8 +181,8 @@ params:
   # 站点基本信息
   # Site Information Settings
   author: 盧瞳
-  subtitle: LuTong's 小站
-  description: 先思考后编程
+  subtitle: 先思考后编程
+  description: LuTong's 小站
   keywords: Hugo,NexT,盧瞳,LuTong
 
   # 不同尺寸站点图标
