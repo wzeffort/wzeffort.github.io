@@ -146,8 +146,7 @@ menus:
       weight: 4
     - identifier: new
       name: 新文章
-      url: >
-    "javascript:(function() {
+      url: "javascript:(function() {
       const textToCopy = `+++\ntitle = ''\ndescription = ''\ndate = '${new Date().toISOString()}'\nlastmod = '${new Date().toISOString()}'\n#keywords = \n#categories = \n#tags = \n# author = ''\n# link = ''\n# imgs = []\n# expand = true\n# extlink = ''\n# url = ''\n# weight = 1\n+++`;
       const tempTextArea = document.createElement('textarea');
       tempTextArea.value = textToCopy;
