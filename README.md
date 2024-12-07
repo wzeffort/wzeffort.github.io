@@ -4,10 +4,7 @@ draft = false
 title = '第一篇Hugo文章'
 +++
 
-## 简介
-
-个人博客盧瞳小站的Github仓库
-
+## 个人博客盧瞳小站的Github仓库
 个人站点[`2061360308.github.io`](//2061360308.github.io)
 
 ## 使用方法
