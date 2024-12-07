@@ -286,7 +286,7 @@ params:
   avatar:
     # 设置显示头像的相对路径
     # Replace the default image and set the url here.
-    url: /imgs/hugo_next_avatar.png
+    url: /imgs/avatar.jpg
     # 开启头像的圆形显示效果
     # If true, the avatar will be displayed in circle.
     rounded: true
@@ -314,9 +314,9 @@ params:
   # Key is the link label order.
   # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
   socials: 
-    social0: Github || https://github.com/elkan1788 || fab fa-github
+    social0: Github || https://github.com/2061360308 || fab fa-github
     #social1: E-Mail || mailto:yourname@gmail.com || fa fa-envelope
-    social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
+    #social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
     #Google: https://plus.google.com/yourname || fab fa-google
     #Twitter: https://twitter.com/yourname || fab fa-twitter
     #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -392,7 +392,7 @@ params:
     # 站点开始年份，默认为当下时间的年份
     # Specify the year when the site was setup. 
     # If not defined, current year will be used.
-    since: 2022
+    since: 2024
 
     # 年份和版权信息之间的图标
     # Icon between year and copyright info.
@@ -430,7 +430,7 @@ params:
     # 站点支持供应商列表
     # Vendors list who support website. 
     vendors:
-      enable: true
+      enable: false
       # 支持说明
       # Some support information description.
       title: 提供CDN/云资源支持
@@ -524,8 +524,8 @@ params:
     # Donate type
     # Usage: `name:image url`
     reward:
-      wechatpay: /imgs/wechat-pay.png
-      alipay: /imgs/ali-pay.png
+      wechatpay: /imgs/wechatpay.png
+      alipay: /imgs/alipay.png
       #paypal: /images/paypal.png
       #bitcoin: /images/bitcoin.png
 
@@ -536,7 +536,7 @@ params:
   followMe:
     #channel0: Twitter || https://twitter.com/username || fab fa-twitter
     #channel1: Telegram || https://t.me/channel_name || fab fa-telegram
-    channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
+    #channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
     channel3: RSS || /atom.xml || fa fa-rss
 
   # 文章的在线编辑
