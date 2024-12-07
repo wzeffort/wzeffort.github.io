@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.120.2
+      HUGO_VERSION: 0.139.3
     steps:
       - name: 安装Hugo CLI
         run: |
@@ -40,9 +40,17 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: 安装Dart Sass
         run: sudo snap install dart-sass
-      - name: 检出
+      - name: 检出 hugo 分支
         uses: actions/checkout@v4
         with:
+          ref: hugo
+          submodules: recursive
+          fetch-depth: 0
+      - name: 检出 main 分支到 ./content/posts
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: ./content/posts
           submodules: recursive
           fetch-depth: 0
       - name: 设置Pages
