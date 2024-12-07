@@ -544,7 +544,7 @@ params:
   # Easily browse and edit blog source code online.
   postEdit:
     enable: true
-    url: https://github.com/2061360308/2061360308.github.dev/tree/main/subdirectory-name/
+    url: https://github.com/2061360308/2061360308.github.io/edit/main/
 
 
   # 设置文本的对齐方式
