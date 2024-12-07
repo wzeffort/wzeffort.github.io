@@ -38,6 +38,8 @@ title = '第一篇Hugo文章'
 
 ✍️编辑文章：访问[github.com/2061360308/2061360308.github.io](https://github.com/2061360308/2061360308.github.io) 仓库直接在线添加货编辑Markdown文件即可<br>
 
+🖼️图床管理：博客使用腾讯云COS储存图片资源，点击使用[COSBrowser-Web](https://cosbrowser.cloud.tencent.com/web/file?bucket=blog-image-1303709080&region=ap-chengdu)工具在线管理
+
 ⚙️网站配置：可以编辑[`config.yaml`](//github.com/2061360308/2061360308.github.io/edit/hugo/config.yaml)<br>
 
 🎨主题更改：直接修改[`.gitmodlues`](//github.com/2061360308/2061360308.github.io/edit/hugo/.gitmodlues)文件来更改子项目配置<br>
