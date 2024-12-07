@@ -144,10 +144,10 @@ menus:
       pageref: /archives
       pre: archive
       weight: 4
-    - identifier: commonweal
-      name: 公益 404
-      url: /404.html
-      pre: heartbeat
+    - identifier: new
+      name: 新文章
+      url: https://github.com/2061360308/2061360308.github.io/new/main
+      pre: pen-to-square
       weight: 5
 
 #-----------------------------------------
