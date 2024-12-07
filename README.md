@@ -5,10 +5,8 @@ title = '第一篇Hugo文章'
 +++
 
 <div style="display: flex; align-items: center;">
-  <a href="//2061360308.github.io" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-    <img src="https://github.com/2061360308/2061360308.github.io/blob/hugo/static/imgs/avatar.jpg?raw=true" alt="头像" style="width: 100px; height: 100px; margin-right: 20px; border-radius: 50%;">
-    <h1 style="margin: 0;">盧瞳小站</h1>
-  </a>
+  <img src="https://github.com/2061360308/2061360308.github.io/blob/hugo/static/imgs/avatar.jpg?raw=true" alt="头像" style="width: 100px; height: 100px; margin-right: 20px; border-radius: 50%;">
+  <h1 style="margin: 0;">盧瞳小站</h1>
 </div>
 
 ## 个人博客《盧瞳小站》的Github仓库
