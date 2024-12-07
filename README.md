@@ -4,28 +4,57 @@ draft = false
 title = '第一篇Hugo文章'
 +++
 
-<div style="display: flex; align-items: center;">
-  <img src="https://github.com/2061360308/2061360308.github.io/blob/hugo/static/imgs/avatar.jpg?raw=true" alt="头像" style="width: 100px; height: 100px; margin-right: 20px; border-radius: 50%;">
-  <h1 style="margin: 0;">盧瞳小站</h1>
-</div>
 
 ## 个人博客《盧瞳小站》的Github仓库
 
-请到 [`2061360308.github.io`](//2061360308.github.io) 浏览构建后的站点
+<div align="center">
+  <table>
+    <tr>
+      <td style="vertical-align: middle;">
+        <a href="//2061360308.github.io" target="_blank">
+          <img src="https://github.com/2061360308/2061360308.github.io/blob/hugo/static/imgs/avatar.jpg?raw=true" alt="头像" style="width: 100px; height: 100px; border-radius: 50%;">
+        </a>
+      </td>
+      <td style="vertical-align: middle;">
+        <a href="//2061360308.github.io" target="_blank" style="text-decoration: none; color: inherit;">
+          <h1 style="margin: 0;">盧瞳小站</h1>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
-## 使用方法
-> 此博客项目完全依赖于Github Workflow在云端进行自动化构建，目前已部署到Github Pages
+<div align="right">
+  <p>请到 <a href="//2061360308.github.io">2061360308.github.io</a> 浏览构建后的站点</p>
+</div>
 
-编辑文章：访问[github.com/2061360308/2061360308.github.io](https://github.com/2061360308/2061360308.github.io) 仓库直接在线添加货编辑Markdown文件即可
+## 🚀使用方法
+<br>
 
-网站配置：可以编辑[`config.yaml`](//github.com/2061360308/2061360308.github.io/edit/hugo/config.yaml)
+> 此博客项目支持在Github云端完成编辑和发布一系列操作，只需浏览器即可无需配置本地环境
+> 已配置Github Workflow负责在云端进行自动化构建以及自动部署到Github Pages
 
-主题更改：直接修改[`.gitmodlues`](//github.com/2061360308/2061360308.github.io/edit/hugo/.gitmodlues)文件来更改子项目配置
+<br>
 
-可以使用[github.dev]()体验更完整的云IDE环境（速度较慢）[main分支](//github.dev/2061360308/2061360308.github.io/tree/main)、[hugo分支](//github.dev/2061306030/2061360308.github.io/tree/hugo)
+✍️编辑文章：访问[github.com/2061360308/2061360308.github.io](https://github.com/2061360308/2061360308.github.io) 仓库直接在线添加货编辑Markdown文件即可<br>
 
+⚙️网站配置：可以编辑[`config.yaml`](//github.com/2061360308/2061360308.github.io/edit/hugo/config.yaml)<br>
 
-## 构建说明
+🎨主题更改：直接修改[`.gitmodlues`](//github.com/2061360308/2061360308.github.io/edit/hugo/.gitmodlues)文件来更改子项目配置<br>
+
+🔗友链编辑：点击修改[`flinks.yaml`](//github.com/2061360308/2061360308.github.io/deit/hugo/data/flinks.yaml)文件来管理友情链接<br>
+
+🌐Github Dev：可以使用github.dev体验更完整的云IDE环境（速度较慢）[main分支](//github.dev/2061360308/2061360308.github.io/tree/main)、[hugo分支](//github.dev/2061306030/2061360308.github.io/tree/hugo)<br>
+
+友链格式参考
+```yaml
+- name: NexT 主题
+  desc: 保持简单的易用性和强大的功能。 # 支持HTML代码
+  avatar: https://hugo-next.eu.org/imgs/hugo_next_avatar.png
+  link: https://hugo-next.eu.org
+```
+
+## 🛠️构建说明
 
 > 【分支】
 > **hugo**分支下保存的是hugo创建的网站文件以及选用的主题Hugo NexT文件
@@ -39,7 +68,7 @@ title = '第一篇Hugo文章'
 
 **注意**：hugo分支的更改提交默认不会触发Github Pages的更新，需要手动激活Workflow
 
-## 本地使用
+## 💻本地使用
 此项目在云端即可运行，如果需要克隆到本地测试请按照下面步骤进行
 
 1. 安装配置Hugo
@@ -79,8 +108,11 @@ git worktree add content/posts main
 git submodule update --init --recursive
 ```
 
-## 相关链接
+## 🔗相关链接
 [Hugo](https://gohugo.io)
+
 [Hugo中文文档](https://hugo.opendocs.io/)
+
 [Hugo NexT演示站](https://hugo-next.eu.org/)
+
 [Hugo NexT Github](https://github.com/hugo-next/hugo-theme-next/)
