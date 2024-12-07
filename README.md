@@ -13,6 +13,9 @@ title = '第一篇Hugo文章'
 
 仅仅是修改文章可以直接在github仓库下选择对应文章打开后点击编辑即可
 
+### 图床
+腾讯云[COS Browser](https://cosbrowser.cloud.tencent.com/web/bucket)
+
 ### 网站配置
 网站的配置需要切换到hugo分支进行修改
 
