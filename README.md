@@ -19,13 +19,12 @@ title = '第一篇Hugo文章'
 ### 网站配置
 网站的配置需要切换到hugo分支进行修改
 
-简单修改也可以使用[**github.dev**](//github.dev/2061306030/2061360308.github.io/tree/hugo)
+更改网站配置可以编辑`config.yaml` [Github在线编辑](//github.com/2061360308/2061360308.github.io/edit/hugo/config.yaml)
 
-更改网站配置可以编辑`config.yaml`
-
-如果需要更换主题可以编辑`.gitmodlues`文件来更改子项目配置
+如果需要更换主题可以编辑`.gitmodlues`文件来更改子项目配置 [Github在线编辑](//github.com/2061360308/2061360308.github.io/edit/hugo/.gitmodlues)
 
 >**注意**：hugo分支的更改提交默认不会触发Github Pages的更新，需要手动激活Workflow
+>简单修改也可以使用[**github.dev**](//github.dev/2061306030/2061360308.github.io/tree/hugo)
 
 ## 构建说明
 
