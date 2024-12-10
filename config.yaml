@@ -146,7 +146,7 @@ menus:
       weight: 4
     - identifier: new
       name: 新文章
-      pageref: "https://stackedit.io/app#providerId=githubWorkspace&owner=2061360308&repo=2061360308.github.io&branch=main"
+      pageref: //stackedit.io/app#providerId=githubWorkspace&owner=2061360308&repo=2061360308.github.io&branch=main
       pre: pen-to-square
       weight: 5
 
