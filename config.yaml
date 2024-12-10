@@ -376,6 +376,8 @@ params:
     # Maximum heading depth of generated toc.
     maxDepth: 3
 
+  addNew:
+    enable: true
 
   # ---------------------------------------------------------------
   # 站点底部设置
