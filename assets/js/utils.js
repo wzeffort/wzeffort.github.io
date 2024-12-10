@@ -413,7 +413,8 @@ tags:
       console.log('Content copied to clipboard');
     }
   });
-    const editorUrl = NexT.CONFIG.addNew.editorUrl;
+    console.log(NexT, NexT.CONFIG)
+    const editorUrl = "";
     if (editorUrl) {
       window.open(editorUrl, '_blank');
     }
