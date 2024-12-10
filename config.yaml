@@ -378,7 +378,7 @@ params:
 
   addNew:
     enable: true
-
+    editorUrl: https://stackedit.cn/app#providerId=githubWorkspace&owner=2061360308&repo=2061360308.github.io&branch=main
   # ---------------------------------------------------------------
   # 站点底部设置
   # Footer Settings
