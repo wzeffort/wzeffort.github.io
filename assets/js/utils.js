@@ -349,6 +349,7 @@ NexT.utils = {
   
   registerAddNewPost: function () {
   const addNewPostButton = document.getElementById('add-new-post');
+  console.log("addNewPostButton:", addNewPostButton);
   if (!addNewPostButton) return;
 
   addNewPostButton.addEventListener('click', () => {
