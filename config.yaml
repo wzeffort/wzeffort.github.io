@@ -144,11 +144,6 @@ menus:
       pageref: /archives
       pre: archive
       weight: 4
-    - identifier: new
-      name: 新文章
-      pageref: //stackedit.io/app#providerId=githubWorkspace&owner=2061360308&repo=2061360308.github.io&branch=main
-      pre: pen-to-square
-      weight: 5
 
 #-----------------------------------------
 # Hugo NexT 主题参数配置
@@ -344,10 +339,10 @@ params:
     # Fontawsome图标名称
     # Icon name in Font Awesome
     # See: https://fontawesome.com/
-    icon: fa fa-globe
+    icon: fa fa-pencil-square-o
     # 显示标题
     # Show title
-    title: 友情链接
+    title: 后台链接
     # 可选值： block | inline
     # Available values: block | inline
     layout: inline
@@ -357,8 +352,9 @@ params:
   # Links of your friends
   # Usage: `Key: name || permalink`
   links: 
-    link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
-    link1: 凡梦星尘空间站 || https://lisenhui.cn
+    link0: Github New || https://github.com/2061360308/2061360308.github.io/new/main
+    link1：Front Matter || "javascript:(function() {const textToCopy = `+++\ntitle = ''\ndescription = ''\ndate = '${new Date().toISOString()}'\nlastmod = '${new Date().toISOString()}'\n#keywords = \n#categories = \n#tags = \n# author = ''\n# link = ''\n# imgs = []\n# expand = true\n# extlink = ''\n# url = ''\n# weight = 1\n+++`;const tempTextArea = document.createElement('textarea');tempTextArea.value = textToCopy;document.body.appendChild(tempTextArea);tempTextArea.select();document.execCommand('copy');document.body.removeChild(tempTextArea);window.open('https://github.com/2061360308/2061360308.github.io/new/main', '_blank');})()"
+    link2: StackEdit.CN || https://stackedit.cn/app#providerId=githubWorkspace&owner=2061360308&repo=2061360308.github.io&branch=main
 
   # 文章目录显示
   # Table of Contents in the Sidebar
