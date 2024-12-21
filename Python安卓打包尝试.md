@@ -9,7 +9,11 @@ tags:
 ---
 ## 前言
 python-for-android
+## 几种设想
+python-for-android
+termux
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzcxNTk2MTJdfQ==
+eyJoaXN0b3J5IjpbMTI5NTc1MDQ2MV19
 -->
