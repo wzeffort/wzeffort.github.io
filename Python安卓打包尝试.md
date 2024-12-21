@@ -20,8 +20,8 @@ termux
 ## 命令行程序
 WebView Xterm.js
 python webscokets库
-重定向标准
+重定向标准输入输出留
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMzE3NjgwNV19
+eyJoaXN0b3J5IjpbLTIxNDMzMzQxMDFdfQ==
 -->
