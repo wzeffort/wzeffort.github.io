@@ -7,7 +7,8 @@ categories:
 tags:  
 ---
 ## 前言
-关于这次折腾我收集了以下几种思路
+python-for-android
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQyNTk1MjQzXX0=
+eyJoaXN0b3J5IjpbMTU5NDY2OTgxMF19
 -->
