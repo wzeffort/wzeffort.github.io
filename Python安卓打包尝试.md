@@ -20,9 +20,12 @@ termux
 ## 命令行程序
 WebView Xterm.js
 python webscokets库
-重定向标准输入输出
+重定向标准输入输出流
+
+## 自动脚本的设想
+利用python-for-android打包服务
+主应用能够调度各种服务
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc3NzExODgsLTIxNDMzMzQxMDFdfQ
-==
+eyJoaXN0b3J5IjpbMTI5NDY1MTI0NCwtMjE0MzMzNDEwMV19
 -->
