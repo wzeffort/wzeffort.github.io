@@ -11,10 +11,17 @@ tags:
 python-for-android
 ## 几种设想
 python-for-android
+	webview
+	kivy
+	Qt
 termux
+## python-for-android
 
+## WebView Xterm.js
+
+##
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwOTI2Mjg5MV19
+eyJoaXN0b3J5IjpbMjY2OTM3NjUyXX0=
 -->
