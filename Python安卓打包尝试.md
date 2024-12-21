@@ -17,11 +17,11 @@ python-for-android
 termux
 ## python-for-android
 
-## WebView Xterm.js
-
-##
-
+## 命令行程序
+WebView Xterm.js
+python webscokets库
+重定向标准
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2OTM3NjUyXX0=
+eyJoaXN0b3J5IjpbMjEzMzE3NjgwNV19
 -->
