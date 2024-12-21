@@ -7,7 +7,7 @@ categories:
 tags:  
 ---
 ## 前言
-Termux
+关于这次折腾我收集了以下几种思路
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NzgxNDg2NV19
+eyJoaXN0b3J5IjpbNjQyNTk1MjQzXX0=
 -->
