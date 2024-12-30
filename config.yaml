@@ -342,7 +342,7 @@ params:
     icon: fa fa-pencil-square-o
     # 显示标题
     # Show title
-    title: 后台链接
+    title: 其他链接
     # 可选值： block | inline
     # Available values: block | inline
     layout: inline
@@ -353,8 +353,8 @@ params:
   # Usage: `Key: name || permalink`
   links: 
     link0: Github New || https://github.com/2061360308/2061360308.github.io/new/main
-    link1: Front Matter || "javascript:(function() {const textToCopy = `+++\ntitle = ''\ndescription = ''\ndate = '${new Date().toISOString()}'\nlastmod = '${new Date().toISOString()}'\n#keywords = \n#categories = \n#tags = \n# author = ''\n# link = ''\n# imgs = []\n# expand = true\n# extlink = ''\n# url = ''\n# weight = 1\n+++`;const tempTextArea = document.createElement('textarea');tempTextArea.value = textToCopy;document.body.appendChild(tempTextArea);tempTextArea.select();document.execCommand('copy');document.body.removeChild(tempTextArea);window.open('https://github.com/2061360308/2061360308.github.io/new/main', '_blank');})()"
     link2: StackEdit.CN || https://stackedit.cn/app#providerId=githubWorkspace&owner=2061360308&repo=2061360308.github.io&branch=main
+    link3: RSS || https://2061360308.github.io/rss.xml
 
   # 文章目录显示
   # Table of Contents in the Sidebar
@@ -535,7 +535,7 @@ params:
     #channel0: Twitter || https://twitter.com/username || fab fa-twitter
     #channel1: Telegram || https://t.me/channel_name || fab fa-telegram
     #channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
-    channel3: RSS || /atom.xml || fa fa-rss
+    channel3: RSS || /rss.xml || fa fa-rss
 
   # 文章的在线编辑
   # Post edit
@@ -637,7 +637,7 @@ params:
   githubBanner:
     # 是否开启显示
     # If true, will display banner.
-    enable: true
+    enable: false
     # 你的 Github 仓库地址
     # Your repository url on Github.
     permalink: https://github.com/2061360308
@@ -743,7 +743,7 @@ params:
   # 注意这里全局配置，意味着所有页面都会加载数学公式脚本
   # Math Formulas Render Support, options: mathjax, katex
   # Warning: It's global settings then will load scripts in every page.
-  #math: mathjax
+  math: mathjax
 
   # TODO
   # FancyBox is a tool that offers a nice and elegant way 
@@ -876,7 +876,7 @@ params:
   giscus:
     # Github 仓库地址，格式：用户名/仓库名称
     # Github repository owner and name
-    repo: username/repo-name
+    repo: 2061360308/2061360308.github.io
     # Giscus 生成的仓库 Id
     # Generate repository Id from Giscus
     repoId: #<repo-id>
