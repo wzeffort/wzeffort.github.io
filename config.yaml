@@ -784,10 +784,12 @@ params:
   # 评论功能设置
   # Comments Settings
   # ---------------------------------------------------------------
+  comment:
+    enable: true
 
   # 评论组件设置，最多支持2个显示
   # Multiple Comment System Support
-  comment:
+  comments:
     # 开启评论组件
     # If true, will show comment component in post end.
     enable: true   
