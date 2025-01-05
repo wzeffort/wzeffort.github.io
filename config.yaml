@@ -787,7 +787,7 @@ params:
 
   # 评论组件设置，最多支持2个显示
   # Multiple Comment System Support
-  comments:
+  comment:
     # 开启评论组件
     # If true, will show comment component in post end.
     enable: true   
