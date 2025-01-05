@@ -8,6 +8,7 @@ followme: false
 nav: false
 copyright: false
 url: about.html
+comment: true
 ---
 
 > 抱歉暂时还没有来得及完成这个页面
