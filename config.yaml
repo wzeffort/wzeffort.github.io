@@ -345,16 +345,16 @@ params:
     title: 其他链接
     # 可选值： block | inline
     # Available values: block | inline
-    layout: inline
+    layout: block
 
   # 友情链接地址
   # 用法： `Key: 显示名称 || 链接地址`
   # Links of your friends
   # Usage: `Key: name || permalink`
   links: 
-    link0: Github New || https://github.com/2061360308/2061360308.github.io/new/main
-    link2: StackEdit.CN || https://stackedit.cn/app#providerId=githubWorkspace&owner=2061360308&repo=2061360308.github.io&branch=main
-    link3: RSS || https://2061360308.github.io/rss.xml
+    link0: Github Repository || https://github.com/2061360308/2061360308.github.io/
+    link2: 后台编辑器 || /editor
+    link3: RSS || /rss.xml
 
   # 文章目录显示
   # Table of Contents in the Sidebar
