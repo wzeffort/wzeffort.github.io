@@ -310,6 +310,8 @@ params:
   # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
   socials: 
     social0: Github || https://github.com/2061360308 || fab fa-github
+    social11: 后台编辑器 || /editor || fa-solid fa-pen-to-square
+    social12: RSS || /rss.xml || fa-solid fa-rss
     #social1: E-Mail || mailto:yourname@gmail.com || fa fa-envelope
     #social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
     #Google: https://plus.google.com/yourname || fab fa-google
@@ -339,7 +341,7 @@ params:
     # Fontawsome图标名称
     # Icon name in Font Awesome
     # See: https://fontawesome.com/
-    icon: fa fa-pencil-square-o
+    icon: fa-solid fa-link
     # 显示标题
     # Show title
     title: 其他链接
@@ -353,8 +355,8 @@ params:
   # Usage: `Key: name || permalink`
   links: 
     link0: Github Repository || https://github.com/2061360308/2061360308.github.io/
-    link2: 后台编辑器 || /editor
-    link3: RSS || /rss.xml
+    #link2: 后台编辑器 || /editor
+    #link3: RSS || /rss.xml
 
   # 文章目录显示
   # Table of Contents in the Sidebar
@@ -375,10 +377,6 @@ params:
     # 最大的列表深度，建议不要超过3层
     # Maximum heading depth of generated toc.
     maxDepth: 3
-
-  addNew:
-    enable: true
-    editorUrl: https://stackedit.cn/app#providerId=githubWorkspace&owner=2061360308&repo=2061360308.github.io&branch=main
   # ---------------------------------------------------------------
   # 站点底部设置
   # Footer Settings
@@ -749,18 +747,18 @@ params:
   # FancyBox is a tool that offers a nice and elegant way 
   # to add zooming functionality for images.
   # For more information: https://fancyapps.com/fancybox/
-  fancybox: false
+  fancybox: true
 
   # TODO
   # Vanilla JavaScript plugin for lazyloading images.
   # For more information: https://apoorv.pro/lozad.js/demo/
-  lazyload: false
+  lazyload: true
 
   # TODO
   # Pangu Support
   # For more information: https://github.com/vinta/pangu.js
   # Server-side plugin: https://github.com/next-theme/hexo-pangu
-  pangu: false
+  pangu: true
 
   # TODO
   # Quicklink Support
@@ -1052,7 +1050,7 @@ params:
 
   # Mermaid tag
   mermaid:
-    enable: false
+    enable: true
     # Available themes: default | dark | forest | neutral
     theme:
       light: default
