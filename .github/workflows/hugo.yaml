@@ -22,6 +22,8 @@ defaults:
 
 jobs:
   build:
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.139.3
@@ -110,7 +112,7 @@ jobs:
           node uploadToAlgolia.js
         env:
           APPLICATION_ID: "68EZJSYL8I"
-          ADMIN_API_KEY: "f53fad757b352bfc663b9bb75eb711fc"
+          ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
           INDEX_NAME: "shokaX"
           FILE_PATH: "./public/algolia.json"
       - name: 上传构建产物
