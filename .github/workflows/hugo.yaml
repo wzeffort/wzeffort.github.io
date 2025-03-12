@@ -60,12 +60,12 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: 上传Algolia索引
-        uses: wangchucheng/algolia-uploader@master
+        uses: darrenjennings/algolia-docsearch-action@master
         with:
-          app_id: 68EZJSYL8I # 替换为您的Algolia应用ID
-          admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }} # 确保已在Secrets中配置
-          index_name: shokaX # 替换为您的索引名称
-          index_file_path: ./public/algolia.json # 替换为索引文件路径（如public/algolia.json）
+          algolia_application_id: 68EZJSYL8I # 替换为您的Algolia应用ID
+          algolia_api_key: ${{ secrets.ALGOLIA_ADMIN_KEY }} # 确保已在Secrets中配置
+          # index_name: shokaX # 替换为您的索引名称
+          file: ./public/algolia.json # 替换为索引文件路径（如public/algolia.json）
       - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
         with:
