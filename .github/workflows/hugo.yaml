@@ -60,7 +60,49 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: 上传Algolia索引
-        uses: iChochy/Algolia-Upload-Records@main
+        run: |
+          # 安装依赖
+          npm install algoliasearch
+
+          # 输出脚本
+          cat > uploadToAlgolia.js << 'EOF'
+          const { algoliasearch } = require('algoliasearch');
+          const fs = require('fs');
+          const path = require('path');
+
+          const APPLICATION_ID = process.env.APPLICATION_ID;
+          const ADMIN_API_KEY = process.env.ADMIN_API_KEY;
+          const INDEX_NAME = process.env.INDEX_NAME;
+          const FILE_PATH = process.env.FILE_PATH;
+
+          // 初始化Algolia客户端
+          const client = algoliasearch(APPLICATION_ID, ADMIN_API_KEY);
+
+          // 读取索引文件
+          const filePath = path.resolve(FILE_PATH);
+
+          console.log('Reading file:', filePath);
+
+          fs.readFile(filePath, 'utf8', async (err, data) => {
+            if (err) {
+              console.error('Error reading file:', err);
+              return;
+            }
+
+            try {
+              const objects = JSON.parse(data);
+
+              // 上传记录到Algolia
+              const response = await client.saveObjects({indexName: INDEX_NAME, objects: objects, waitForTasks: true});
+              console.log('Records uploaded successfully:', response);
+            } catch (parseError) {
+              console.error('Error parsing JSON file:', parseError);
+            }
+          });
+          EOF
+
+          # 执行脚本
+          node uploadToAlgolia.js
         env:
           APPLICATION_ID: "68EZJSYL8I"
           ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
