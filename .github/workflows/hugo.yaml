@@ -32,10 +32,10 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: 安装Dart Sass
         run: sudo snap install dart-sass
-      - name: 检出 hugo 分支
+      - name: 检出 主题 分支
         uses: actions/checkout@v4
         with:
-          ref: hugo
+          ref: taichi
           submodules: recursive
           fetch-depth: 0
       - name: 检出 main 分支到 ./content/posts
