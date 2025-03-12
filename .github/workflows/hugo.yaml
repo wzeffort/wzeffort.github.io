@@ -64,6 +64,11 @@ jobs:
           # 安装依赖
           npm install algoliasearch
 
+          echo "APPLICATION_ID: $APPLICATION_ID"
+          echo "ADMIN_API_KEY: $ADMIN_API_KEY"
+          echo "INDEX_NAME: $INDEX_NAME"
+          echo "FILE_PATH: $FILE_PATH"
+
           # 输出脚本
           cat > uploadToAlgolia.js << 'EOF'
           const { algoliasearch } = require('algoliasearch');
