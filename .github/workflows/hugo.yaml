@@ -59,18 +59,6 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: 检测ADMIN_API_KEY是否存在
-        run: |
-          if [ -z "$ADMIN_API_KEY" ]; then
-            echo "ADMIN_API_KEY 未设置或为空"
-            exit 1
-          else
-            echo "ADMIN_API_KEY 已设置（非空）"
-            # 如果需要进一步确认长度（不暴露内容）
-            echo "ADMIN_API_KEY 长度：${#ADMIN_API_KEY}"
-          fi
-        env:
-          ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
       - name: 上传Algolia索引
         run: |
           # 安装依赖
@@ -122,7 +110,7 @@ jobs:
           node uploadToAlgolia.js
         env:
           APPLICATION_ID: "68EZJSYL8I"
-          ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          ADMIN_API_KEY: "f53fad757b352bfc663b9bb75eb711fc"
           INDEX_NAME: "shokaX"
           FILE_PATH: "./public/algolia.json"
       - name: 上传构建产物
