@@ -62,10 +62,10 @@ jobs:
       - name: 上传Algolia索引
         uses: iChochy/Algolia-Upload-Records@main
         with:
-          APPLICATION_ID: "68EZJSYL8I" # 替换为您的Algolia应用ID
-          ADMIN_API_KEY: "${{ secrets.ALGOLIA_ADMIN_KEY }}/" # 确保已在Secrets中配置
-          INDEX_NAME: "shokaX" # 替换为您的索引名称
-          FILE_PATH: "./public/algolia.json" # 替换为索引文件路径（如public/algolia.json）
+          appId: "68EZJSYL8I"  # 注意参数名改为小驼峰格式
+          apiKey: ${{ secrets.ALGOLIA_ADMIN_KEY }}  # 修正参数名并移除尾部斜杠
+          indexName: "shokaX"
+          filePath: "./public/algolia.json"  # 注意参数名改为小驼峰格式
       - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
         with:
