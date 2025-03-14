@@ -26,7 +26,7 @@ monthFormat: "2006-01"
 dateFormat: "2006-01-02"
 timeFormat: "2006-01-02 15:04:05"
 
-author: 盧瞳
+author: 小昃
 description: "Lutong's Blog"
 subtitle: "Lutong's Blog【先思考后编程】"
 
@@ -295,12 +295,12 @@ gitalk:
 
 # https://giscus.app/zh-CN
 giscus:
-  enable: true
-  repo: '2061360308/2061360308.github.io'
-  repoId: 'R_kgDONaParA'
-  category: 'Comments'
-  categoryId: 'DIC_kwDONaParM4ClvPf'
-  mapping: pathname
+  enable: false
+  repo: 
+  repoId: 
+  category: 
+  categoryId: 
+  mapping: 
   strict: 0
   reactionsEnabled: 1
   emitMetadata: 0
